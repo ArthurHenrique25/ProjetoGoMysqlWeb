@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Investimento</title>
+
+        <link rel="stylesheet" href="../css/indexpage.css?v=3">
+
+    </head>
+    <body>
+  
+        
+        <div class="Coluna1">
+
+            <div class="card-financeiro">  
+                <h1>Comissão:</h1>
+                <h2>{{.ValorComissao}}</h2>
+            </div>
+          
+            <div class="card-financeiro">
+            <h1>Despesas:</h1>
+            <h2>Atualizar</h2>
+            </div> 
+
+            <div class="card-financeiro">
+            <h1>Mt. depesas:</h1>
+            <h2>{{.MetaDespesas}}</h2>
+            </div>
+
+            <div class="card-financeiro">
+            <h1>Contas a pagar:</h1>
+            <h2>Atualizar</h2>
+            </div>  
+
+            <div class="card-financeiro">
+            <h1>Pg alimento:</h1>
+            <h2>Atualizar</h2>
+            </div>
+        </div>
+
+        <div class="Menu1">
+            <div class="Lista">
+                <button>PÁGINA INICIAL</button>
+                <button>CONFIGURAÇÃO</button>
+                <button>SAIR</button>
+            </div>
+        </div>
+    
+    
+        
+        <script src="../scripts/javascript.js"></script>
+
+        <script>
+           var nomeDoCliente = "{{.Nome}}";
+           efeito("Ola caro visitante: ",nomeDoCliente);
+
+          </script>
+
+    </body>
+</html>
